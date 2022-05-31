@@ -8,8 +8,10 @@ for val in $upgrade; do
     sh setup_0.sh
 done
 
+echo "aliali1"
 # remove the directory
 rm -rf $dir
 
+echo "aliali2"
 # run upgrade
 rm -rf /home/dorna/Downloads/upgrade && mkdir /home/dorna/Downloads/upgrade && git clone https://github.com/dorna-robotics/upgrade.git /home/dorna/Downloads/upgrade && cd /home/dorna/Downloads/upgrade && sh setup_0.sh
