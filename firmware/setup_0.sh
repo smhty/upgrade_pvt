@@ -1,6 +1,6 @@
 #!/bin/bash 
 # variables
-dir_temp="/home/dorna/Downloads/dorna_lab_temp"
+dir_temp="/home/dorna/Downloads/firmware_temp"
 repo="https://github.com/smhty/firmware.git"
 
 # remove and reopen the folder
@@ -15,7 +15,9 @@ python3 firmware.py
 
 # run the update
 cd $dir_temp
-sh upgrade
+echo "ali3"
+sh upgrade.sh
+echo "ali4"
 
 # remove tmp folder
 rm -rf $dir_temp
