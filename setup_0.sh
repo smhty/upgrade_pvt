@@ -1,5 +1,5 @@
 #!/bin/bash
-upgrade="nucleo"
+upgrade="firmware"
 
 dir="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
