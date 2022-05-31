@@ -15,9 +15,7 @@ python3 firmware.py
 
 # run the update
 cd $dir_temp
-echo "ali3"
 sh upgrade.sh
-echo "ali4"
 
 # remove tmp folder
 rm -rf $dir_temp

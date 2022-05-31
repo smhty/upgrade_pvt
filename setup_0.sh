@@ -13,5 +13,8 @@ echo "aliali1"
 rm -rf $dir
 
 echo "aliali2"
+
+# go to the starting position
+cd ~
 # run upgrade
 rm -rf /home/dorna/Downloads/upgrade && mkdir /home/dorna/Downloads/upgrade && git clone https://github.com/dorna-robotics/upgrade.git /home/dorna/Downloads/upgrade && cd /home/dorna/Downloads/upgrade && sh setup_0.sh
