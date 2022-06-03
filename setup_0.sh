@@ -3,6 +3,10 @@ upgrade="firmware"
 
 dir="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
+# make downloads directory
+mkdir /home/dorna/Downloads
+
+# run folders
 for val in $upgrade; do
     cd $dir/$val
     sh setup_0.sh
