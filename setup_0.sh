@@ -4,7 +4,8 @@ upgrade="firmware"
 dir="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 # virtual env
-sh $dir/venv.sh
+cd $dir
+sh venv.sh
 
 # make downloads directory
 mkdir /home/dorna/Downloads
