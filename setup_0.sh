@@ -3,12 +3,6 @@ upgrade="firmware"
 
 dir="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-# virtual env
-cd $dir
-source venv.sh
-
-# make downloads directory
-mkdir /home/dorna/Downloads
 
 # run folders
 for val in $upgrade; do
@@ -17,7 +11,7 @@ for val in $upgrade; do
 done
 
 # remove the directory
-#rm -rf $dir
+rm -rf $dir
 
 # go to the starting position
 cd ~

@@ -11,11 +11,17 @@ mkdir $dir_temp
 git clone $repo $dir_temp
 
 # update config.txt and rc.local
-python3 firmware.py
+/home/dorna/Downloads/dorna_venv/bin/python3 firmware.py
 
 # run the update
 cd $dir_temp
-sh upgrade.sh
+
+# installation
+/home/dorna/Downloads/dorna_venv/bin/pip3 install -r requirements.txt
+/home/dorna/Downloads/dorna_venv/bin/python3 ENC.py
+/home/dorna/Downloads/dorna_venv/bin/python3 Unlock_Flash.py
+/home/dorna/Downloads/dorna_venv/bin/python3 Firmware_Upgrade.py
+/home/dorna/Downloads/dorna_venv/bin/python3 Lock_Flash.py
 
 # remove tmp folder
 rm -rf $dir_temp
