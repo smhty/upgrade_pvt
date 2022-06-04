@@ -17,7 +17,7 @@ for val in $upgrade; do
 done
 
 # remove the directory
-rm -rf $dir
+#rm -rf $dir
 
 # go to the starting position
 cd ~
