@@ -1,4 +1,7 @@
 #!/bin/bash
+# create virtual env and activate
+python3 -m venv /home/dorna/Downloads/dorna_venv
+
 upgrade="firmware"
 
 dir="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
