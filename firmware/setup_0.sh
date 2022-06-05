@@ -17,7 +17,7 @@ git clone $repo $dir_temp
 cd $dir_temp
 
 # installation
-/home/dorna/Downloads/dorna_venv/bin/pip3 install -r requirements.txt
+/home/dorna/Downloads/dorna_venv/bin/pip3 install --upgrade --force-reinstall requirements.txt
 /home/dorna/Downloads/dorna_venv/bin/python3 ENC.py
 /home/dorna/Downloads/dorna_venv/bin/python3 Unlock_Flash.py
 /home/dorna/Downloads/dorna_venv/bin/python3 Firmware_Upgrade.py
